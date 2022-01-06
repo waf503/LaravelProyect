@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Users;
 use App\Http\Controllers\CursoController;
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,7 @@ use App\Http\Controllers\CursoController;
 
 //Pasar datos por las rutas
 
+Route::get('/',HomeController::class);
 
 Route::get('/cursos', [CursoController::class, 'index']);
 

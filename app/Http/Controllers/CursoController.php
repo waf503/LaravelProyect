@@ -8,14 +8,14 @@ class CursoController extends Controller
 {
     //
     public function index(){
-       echo "Bienvenido a la pagina principal"; 
+       return view('cursos.index');
     }
 
     public function create(){
-        echo "Aquí puedes crear un curso";
+        return view('cursos.create');
     }
 
-    public function show($curso="MiCurso"){
-        echo "El curso es: $curso";
+    public function show($curso = "MiCurso"){
+        return view('cursos.show',['curso'=>$curso]);
     }
 }

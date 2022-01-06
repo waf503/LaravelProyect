@@ -1,1 +1,7 @@
-<h1>Hola {{$name}}</h1>
+@extends('layouts.plantilla')
+
+@section('title', 'Home')
+
+@section('content')
+    <h2>Bienvenido a mi primer proyecto Laravel</h2>
+@endsection
